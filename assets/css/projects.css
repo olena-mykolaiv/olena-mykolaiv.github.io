@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+body {
+    background: #292929;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 40px 0;
+}
+
+a{
+  text-decoration: none;
+  text-underline-position: under;
+}
+a:link{
+  color: #fff;
+}
+a:visited{
+  color: #fff;
+}
+h1{
+  font-size: 3.5em;
+  font-weight: 900;
+  letter-spacing: -.0625rem;
+    font-family: 'America XIX';
+    padding-top: 200px;
+    opacity: .3;
+}
+p{
+  line-height: 1.25;
+  margin-bottom: 0.75em;
+    font-size: 1.24em;
+}
+
+.nav{
+  padding: 1.5rem;
+}
+
+
+.menu{
+  flex-grow: 1;
+  list-style: none;
+}
+.menu-link{
+  display: inline-block;
+  padding: 1rem 1.5rem;
+}
+.menu-link:hover{
+  text-decoration: underline;
+}
+
+
+
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.align-baseline{
+  align-items: baseline;
+}
+.justify-center{
+  justify-content: center;
+}
+
+
+
+.container.gallery-container {
+    background-color: #292929;
+    color: #000;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'America XIX';
+    font-weight: bold;
+    color: fff;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 50px;
+}
+
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
